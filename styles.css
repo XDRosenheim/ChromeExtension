@@ -1,25 +1,41 @@
-/* Grayscale icons */
+/* Most things are perfect for grayscaling. */
 #yt-masthead #logo-container .logo, /* YouTube logo */
 #yt-masthead-user .yt-uix-button-icon-bell, /* Notification icon */
 #masthead-appbar-containe,
 #comment-section-renderer .comment-renderer-footer .sprite-comment-actions,
 .creator-bar-item .yt-uix-button-text-dark,
 #watch8-action-buttons .yt-uix-button, #watch8-action-buttons .yt-uix-button:hover, #action-panel-dismiss, #action-panel-dismiss:hover,
-.yt-card .yt-uix-button-expander:hover
+.yt-card .yt-uix-button-expander:hover,
+#watch-header > #watch7-user-header > #watch7-subscription-container a::before
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
-
 /* Background colouring */
 body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-discussion, #yt-masthead-container, #footer-container {
 	background-color: #292929 !important;
 }
-
+#yt-masthead-container {
+	border-bottom-color: #5f5f5f !important;
+}
+#masthead-appbar {
+	background: #292929 !important;
+	border-bottom-color: #5f5f5f !important;
+}
 #watch-description-clip {
 	color: white !important;
 }
+#appbar-nav .epic-nav-item-heading {
+	color: white !important;
+}
+#appbar-nav .yt-uix-button.yt-uix-button-epic-nav-item {
+	color: #aaa !important;
+}
 .yt-card {
 	box-shadow: 0 1px 2px rgba(0,0,0,.75) !important;
+	background-color: #292929 !important;
+}
+.yt-uix-menu-trigger-selected .yt-ui-menu-item, .yt-ui-menu-item:hover {
+	background: #3C3C3C !important;
 }
 /*
  *	Watch START
@@ -29,9 +45,16 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
  */
 #watch7-creator-bar-nav-buttons a {
 	border-color: #070707 !important;
-	background: green !important;
+	background: #292929 !important;
 	color: white !important;
 }
+#watch7-creator-bar {
+	border: 0 !important; /* I don't get why they made a border for this one... */
+}
+.yt-ui-menu-item.has-icon:before {
+	-webkit-filter: grayscale(1) invert(1);
+}
+#watch-header > #watch7-headline > #watch-headline-title > 
 /*
  *	Owner END
  */
@@ -50,6 +73,14 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 #watch-header .yt-user-info a {
 	color: #128E42 !important;
 }
+#watch-header > #watch8-action-buttons {
+	border-top-color: #070707 !important;
+}
+#watch-header > #watch7-user-header > #watch7-subscription-container a {
+	border-color: #070707 !important;
+	background: #292929 !important;
+	color: white !important;
+}
 /*
  *	Header END
  */
@@ -61,6 +92,9 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 }
 .yt-card .yt-uix-button-expander {
 	border-top: 0 !important;
+}
+.watch-extras-section .title, .watch-extras-section .content > .title {
+	color: white;
 }
 /*
  *	Description END
@@ -100,6 +134,23 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 .comment-renderer-like-count {
 	color: rgb(255, 240, 40);
 }
+/* Sorting button (Top or new comments) */
+#watch-discussion > #comment-section-renderer > .yt-uix-menu > button {
+	color: white;
+	border-color: #070707 !important;
+	background: #292929 !important;
+}
+.yt-uix-button-default:active, .yt-uix-button-default.yt-uix-button-toggled, .yt-uix-button-default.yt-uix-button-active, .yt-uix-button-default.yt-uix-button-active:focus, .yt-uix-button-text:active {
+	box-shadow: inset 0 1px rgba(0,0,0,.75) !important;
+}
+.yt-ui-menu-content {
+	background: #292929 !important;
+	border: 1px solid #070707 !important;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.75) !important;
+}
+.yt-ui-menu-item-label {
+	color: white !important;
+}
 /*
  *	Comments END
  */
@@ -107,9 +158,6 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
  *	Watch END
  */
 
-.watch-extras-section .title, .watch-extras-section .content {
-	color: white;
-}
 
 .content-region {
 	color: white !important;
