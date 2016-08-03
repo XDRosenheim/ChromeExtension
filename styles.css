@@ -1,0 +1,121 @@
+/* Grayscale icons */
+#yt-masthead #logo-container .logo, /* YouTube logo */
+#yt-masthead-user .yt-uix-button-icon-bell, /* Notification icon */
+#masthead-appbar-containe,
+#comment-section-renderer .comment-renderer-footer .sprite-comment-actions,
+.creator-bar-item .yt-uix-button-text-dark,
+#watch8-action-buttons .yt-uix-button, #watch8-action-buttons .yt-uix-button:hover, #action-panel-dismiss, #action-panel-dismiss:hover,
+.yt-card .yt-uix-button-expander:hover
+{
+	-webkit-filter: grayscale(1) invert(1);
+}
+
+/* Background colouring */
+body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-discussion, #yt-masthead-container, #footer-container {
+	background-color: #292929 !important;
+}
+
+#watch-description-clip {
+	color: white !important;
+}
+.yt-card {
+	box-shadow: 0 1px 2px rgba(0,0,0,.75) !important;
+}
+/*
+ *	Watch START
+ */
+/*
+ *	Owner START
+ */
+#watch7-creator-bar-nav-buttons a {
+	border-color: #070707 !important;
+	background: green !important;
+	color: white !important;
+}
+/*
+ *	Owner END
+ */
+/*
+ *	Header START
+ */
+#watch-headline-title .watch-title {
+	background: #292929;
+	color: #BFBFBF;
+}
+#watch-headline-title .watch-title:hover {
+	background: #4A4A4A;
+	color: #BFBFBF;
+}
+/* OP name*/
+#watch-header .yt-user-info a {
+	color: #128E42 !important;
+}
+/*
+ *	Header END
+ */
+/*
+ *	Description START
+ */
+#action-panel-details a {
+	color: #167ac6 !important;
+}
+.yt-card .yt-uix-button-expander {
+	border-top: 0 !important;
+}
+/*
+ *	Description END
+ */
+
+/*
+ *	Comments START
+ */
+ /* Primary comment colour */
+.comment-renderer-text-content {
+	color: white;
+}
+/* Coloured names */
+.comment-author-text {
+	color: #128ee9;
+}
+/* Give OP a new colour + "[OP]"-tag*/
+.comment-renderer.channel-owner .comment-author-text,
+.comment-renderer.channel-owner .comment-author-text::before {
+	background: #292929 !important;
+	color: #128E42;
+	content: "[OP] ";
+}
+/* Textbox box boxbox box*/
+.comment-simplebox {
+	background: #292929 !important;
+}
+/* That little arrow on comment textbox */
+.comment-simplebox-arrow .arrow-inner {
+	border: 7px solid #292929 !important;
+}
+/* Reply text*/
+#comment-section-renderer .comment-renderer-reply {
+	color: #cccccc !important;
+}
+/* Comment score*/
+.comment-renderer-like-count {
+	color: rgb(255, 240, 40);
+}
+/*
+ *	Comments END
+ */
+/*
+ *	Watch END
+ */
+
+.watch-extras-section .title, .watch-extras-section .content {
+	color: white;
+}
+
+.content-region {
+	color: white !important;
+}
+
+.feed .not-fixed-width-tab-widescreen .clearfix {
+	background: red;
+}
+
