@@ -48,6 +48,9 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 /*
  *	Watch START
  */
+#watch7-headline h1 {
+	color: white !important;
+}
 /*
  *	Owner START
  */
@@ -73,9 +76,9 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 	background: #292929;
 	color: #BFBFBF;
 }
-#watch-headline-title .watch-title:hover {
-	background: #4A4A4A;
-	color: #BFBFBF;
+.watch-editable:hover {
+	background: #4A4A4A !important;
+	color: #BFBFBF !important;
 }
 /* OP name*/
 #watch-header .yt-user-info a {
