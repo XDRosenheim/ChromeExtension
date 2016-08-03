@@ -11,7 +11,10 @@
 .yt-card .yt-uix-button-expander:hover,
 #watch-header > #watch7-user-header > #watch7-subscription-container a::before,
 .add-to-widget .private-icon,
-.add-to-widget .public-icon
+.add-to-widget .public-icon,
+.yt-uix-form-input-radio-container, .yt-uix-form-input-checkbox-container,
+input[type="radio" i],
+input[type="checkbox" i]
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -109,6 +112,30 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 }
 /*
  *	Add to... END
+ */
+/*
+ *	Share START
+ */
+.yt-card .yt-uix-tabs .yt-uix-button:hover, .yt-card .yt-uix-tabs .yt-uix-button:active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled {
+	color: white !important;
+}
+.yt-uix-button-text, .yt-uix-button-text[disabled] {
+	color: #ccc !important;
+}
+.yt-card .yt-uix-tabs {
+	border-bottom-color: #555555 !important;
+}
+.share-panel-start-at-container {
+	color: white !important;
+}
+.share-email label {
+	color: white !important;
+}
+.share-panel {
+	color: white !important;
+}
+/*
+ *	Share END
  */
 /*
  *	Header END
