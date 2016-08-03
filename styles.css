@@ -3,10 +3,15 @@
 #yt-masthead-user .yt-uix-button-icon-bell, /* Notification icon */
 #masthead-appbar-containe,
 #comment-section-renderer .comment-renderer-footer .sprite-comment-actions,
-.creator-bar-item .yt-uix-button-text-dark,
-#watch8-action-buttons .yt-uix-button, #watch8-action-buttons .yt-uix-button:hover, #action-panel-dismiss, #action-panel-dismiss:hover,
+.creator-bar-item .yt-uix-button-text-dark, /* Owner video options*/
+#watch8-action-buttons .yt-uix-button, /* Add to / share / More   etc. */
+#watch8-action-buttons .yt-uix-button:hover, 
+#action-panel-dismiss, 
+#action-panel-dismiss:hover,
 .yt-card .yt-uix-button-expander:hover,
-#watch-header > #watch7-user-header > #watch7-subscription-container a::before
+#watch-header > #watch7-user-header > #watch7-subscription-container a::before,
+.add-to-widget .private-icon,
+.add-to-widget .public-icon
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -82,6 +87,30 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 	color: white !important;
 }
 /*
+ *	Add to... START
+ */
+#yt-uix-videoactionmenu-menu > .hide-on-create-pl-panel h3 {
+	color: white !important;
+}
+.add-to-widget .addto-playlist-item {
+	color: white !important;
+}
+.add-to-widget .addto-playlist-item:hover, .add-to-widget .create-playlist-item:hover, .add-to-widget .addto-playlist-item.yt-uix-kbd-nav-highlight {
+	background-color: #4A4A4A !important;
+}
+.add-to-widget > .yt-spinner {
+	color: white;
+}
+.add-to-widget .playlists {
+	border-bottom-color: #555555 !important;
+}
+.add-to-widget .create-playlist-item {
+	color: white !important;
+}
+/*
+ *	Add to... END
+ */
+/*
  *	Header END
  */
 /*
@@ -99,7 +128,6 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 /*
  *	Description END
  */
-
 /*
  *	Comments START
  */
@@ -157,12 +185,9 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 /*
  *	Watch END
  */
-
-
 .content-region {
 	color: white !important;
 }
-
 .feed .not-fixed-width-tab-widescreen .clearfix {
 	background: red;
 }
