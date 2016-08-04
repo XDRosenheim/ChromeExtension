@@ -2,8 +2,8 @@
   "manifest_version": 2,
  
   "name": "Night mode for YouTube",
-  "version": "0.1.0",
-  "description": "Makes YouTube browser a little bit better for your eyes",
+  "version": "0.2.0",
+  "description": "Makes YouTube browsing a little bit better for your eyes",
  
   "content_scripts": [{
     "css": ["styles.css"],

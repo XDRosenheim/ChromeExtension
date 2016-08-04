@@ -1,3 +1,10 @@
+/*
+	Borders 	#070707
+	Text 		#FFFFFF
+	Links		#167ac6
+	Backgrounds #292929
+*/
+
 /* Most things are perfect for grayscaling. */
 #yt-masthead #logo-container .logo, /* YouTube logo */
 #yt-masthead-user .yt-uix-button-icon-bell, /* Notification icon */
@@ -14,20 +21,32 @@
 .add-to-widget .public-icon,
 .yt-uix-form-input-radio-container, .yt-uix-form-input-checkbox-container,
 input[type="radio" i],
-input[type="checkbox" i]
+input[type="checkbox" i],
+.yt-ui-menu-item.has-icon:before,
+.watch-pencil-icon:before,
+#masthead-search .search-btn-component .yt-uix-button-content,
+.autoplay-bar .autoplay-info-icon,
+#footer .yt-uix-button-icon-footer-language,
+#footer .yt-uix-button-icon-footer-history,
+#footer .yt-uix-button-icon-questionmark,
+.yt-uix-button-arrow,
+#footer-logo .footer-logo-icon,
+.yt-uix-button-arrow
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
 /* Background colouring */
-body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-discussion, #yt-masthead-container, #footer-container {
+body, #page, #watch7-creator-bar,
+#watch-header, #action-panel-details, #watch-discussion,
+#yt-masthead-container, #footer-container {
 	background-color: #292929 !important;
 }
 #yt-masthead-container {
-	border-bottom-color: #5f5f5f !important;
+	border-bottom-color: #070707 !important;
 }
 #masthead-appbar {
 	background: #292929 !important;
-	border-bottom-color: #5f5f5f !important;
+	border-bottom-color: #070707 !important;
 }
 #watch-description-clip {
 	color: white !important;
@@ -45,6 +64,39 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 .yt-uix-menu-trigger-selected .yt-ui-menu-item, .yt-ui-menu-item:hover {
 	background: #3C3C3C !important;
 }
+/* Button colouring */
+#watch7-creator-bar-nav-buttons a,
+#watch-header > #watch7-user-header > #watch7-subscription-container a,
+.watch-title .watch-pencil-icon,
+#action-panel-details .watch-pencil-icon,
+#upload-btn, #search-btn,
+#watch-discussion > #comment-section-renderer > .yt-uix-menu > button,
+#footer-container > #footer > #footer-main > a,
+#footer-container > #footer > #footer-main button,
+#comment-simplebox-create-comment button.yt-uix-button-default,
+#masthead-positioner > .yt-consent > .yt-consent-buttons > button.consent-close {
+	border: 1px solid #070707 !important;
+	background: #292929 !important;
+	color: white !important;
+}
+/*
+ *	Home START
+ */
+.webkit .yt-ui-ellipsis-2 {
+	background-color: #292929 !important;
+}
+.branded-page-module-title-text {
+	color: white;
+}
+.branded-page-module-title-text:hover {
+	color: #167ac6 !important;
+}
+#browse-items-primary .item-section>li>.yt-lockup-tile, .branded-page-v2-primary-col .branded-page-box, .section-list li .item-section .branded-page-box {
+	border-color: #070707 !important;
+}
+/*
+ *	Home END
+ */
 /*
  *	Watch START
  */
@@ -54,18 +106,16 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 /*
  *	Owner START
  */
-#watch7-creator-bar-nav-buttons a {
-	border-color: #070707 !important;
-	background: #292929 !important;
-	color: white !important;
-}
 #watch7-creator-bar {
 	border: 0 !important; /* I don't get why they made a border for this one... */
 }
-.yt-ui-menu-item.has-icon:before {
-	-webkit-filter: grayscale(1) invert(1);
+.watch-editable:hover {
+	background: #4A4A4A !important;
+	color: #BFBFBF !important;
 }
-#watch-header > #watch7-headline > #watch-headline-title > 
+#watch-headline-title > h1 > button {
+	display: none;
+}
 /*
  *	Owner END
  */
@@ -76,21 +126,18 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 	background: #292929;
 	color: #BFBFBF;
 }
-.watch-editable:hover {
-	background: #4A4A4A !important;
-	color: #BFBFBF !important;
-}
 /* OP name*/
 #watch-header .yt-user-info a {
 	color: #128E42 !important;
 }
+/* Sub counter */
+.yt-subscription-button-subscriber-count-branded-horizontal, .yt-subscription-button-subscriber-count-unbranded-horizontal {
+	background-color: #292929 !important;
+	color: white !important;
+	border-color: #e62117 !important;
+}
 #watch-header > #watch8-action-buttons {
 	border-top-color: #070707 !important;
-}
-#watch-header > #watch7-user-header > #watch7-subscription-container a {
-	border-color: #070707 !important;
-	background: #292929 !important;
-	color: white !important;
 }
 /*
  *	Add to... START
@@ -161,7 +208,27 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 /*
  *	Comments START
  */
- /* Primary comment colour */
+.comment-section-header-renderer {
+	color: #b8b8b8 !important;
+}
+/* "Add a public comment..." */
+.comment-simplebox-renderer {
+	border-bottom-color: #070707 !important;
+}
+.comment-simplebox-renderer-collapsed-content {
+	border-color: #070707 !important;
+}
+.comment-simplebox.focus .comment-simplebox-frame {
+	border-color: green !important;
+}
+.comment-simplebox-text, .comment-simplebox-prompt {
+	background-color: #292929 !important;
+	color: white !important;
+}
+.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer {
+	display: none;
+}
+/* Primary comment colour */
 .comment-renderer-text-content {
 	color: white;
 }
@@ -169,14 +236,14 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 .comment-author-text {
 	color: #128ee9;
 }
-/* Give OP a new colour + "[OP]"-tag*/
+/* Give OP a new colour + "[OP]"-tag */
 .comment-renderer.channel-owner .comment-author-text,
 .comment-renderer.channel-owner .comment-author-text::before {
 	background: #292929 !important;
 	color: #128E42;
 	content: "[OP] ";
 }
-/* Textbox box boxbox box*/
+/* Textbox box boxbox box */
 .comment-simplebox {
 	background: #292929 !important;
 }
@@ -184,19 +251,13 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 .comment-simplebox-arrow .arrow-inner {
 	border: 7px solid #292929 !important;
 }
-/* Reply text*/
+/* Reply text */
 #comment-section-renderer .comment-renderer-reply {
 	color: #cccccc !important;
 }
-/* Comment score*/
+/* Comment score */
 .comment-renderer-like-count {
-	color: rgb(255, 240, 40);
-}
-/* Sorting button (Top or new comments) */
-#watch-discussion > #comment-section-renderer > .yt-uix-menu > button {
-	color: white;
-	border-color: #070707 !important;
-	background: #292929 !important;
+	color: rgb(255, 240, 40) !important;
 }
 .yt-uix-button-default:active, .yt-uix-button-default.yt-uix-button-toggled, .yt-uix-button-default.yt-uix-button-active, .yt-uix-button-default.yt-uix-button-active:focus, .yt-uix-button-text:active {
 	box-shadow: inset 0 1px rgba(0,0,0,.75) !important;
@@ -213,6 +274,42 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
  *	Comments END
  */
 /*
+ *	Recommended list START
+ */
+#watch-channel-brand-div-text {
+	display: block !important;
+}
+#watch7-sidebar .watch-sidebar-head {
+	color: white !important;
+}
+#watch7-sidebar .watch-sidebar-separation-line {
+	border-bottom-color: #070707 !important;
+}
+.video-list .video-list-item .title {
+	color: white !important;
+}
+.video-list .video-list-item .content-wrapper:hover .title {
+	color: #167ac6 !important;
+}
+.yt-badge-list {
+	background-color: #9B0000;
+	border-color: #070707;
+}
+.yt-badge {
+	color: white !important;
+}
+.standalone-collection-badge-renderer-icon {
+	background-color: #292929 !important;
+	color: white !important;
+	border-color: #EB0D0D !important;
+}
+.standalone-collection-badge-renderer-text {
+	color: #777 !important;
+}
+/*
+ *	Recommended list END
+ */
+/*
  *	Watch END
  */
 .content-region {
@@ -221,4 +318,17 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 .feed .not-fixed-width-tab-widescreen .clearfix {
 	background: red;
 }
+/* Footer */
+#footer-links-primary a {
+	color: #167ac6 !important;
+}
 
+
+/* Consent */
+.yt-consent-banner {
+	background-color: #292929 !important;
+	border-bottom-color: #070707 !important;
+}
+.yt-consent-banner .yt-consent-content{
+	color: white !important;
+}
