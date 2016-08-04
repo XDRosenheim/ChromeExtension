@@ -72,8 +72,9 @@ body, #page, #watch7-creator-bar,
 #watch-discussion > #comment-section-renderer > .yt-uix-menu > button,
 #footer-container > #footer > #footer-main > a,
 #footer-container > #footer > #footer-main button,
-#comment-simplebox-create-comment button.yt-uix-button-default {
-	border-color: #070707 !important;
+#comment-simplebox-create-comment button.yt-uix-button-default,
+#masthead-positioner > .yt-consent > .yt-consent-buttons > button.consent-close {
+	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
 }
@@ -290,6 +291,15 @@ body, #page, #watch7-creator-bar,
 }
 /* Footer */
 #footer-links-primary a {
-	color: #167ac6 
-	!important;
+	color: #167ac6 !important;
+}
+
+
+/* Consent */
+.yt-consent-banner {
+	background-color: #292929 !important;
+	border-bottom-color: #070707 !important;
+}
+.yt-consent-banner .yt-consent-content{
+	color: white !important;
 }
