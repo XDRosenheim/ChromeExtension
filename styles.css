@@ -1,3 +1,9 @@
+/*
+	Borders 	#070707
+	Text 		#FFFFFF
+	Backgrounds #292929
+*/
+
 /* Most things are perfect for grayscaling. */
 #yt-masthead #logo-container .logo, /* YouTube logo */
 #yt-masthead-user .yt-uix-button-icon-bell, /* Notification icon */
@@ -16,20 +22,23 @@
 input[type="radio" i],
 input[type="checkbox" i],
 .yt-ui-menu-item.has-icon:before,
-.watch-pencil-icon:before
+.watch-pencil-icon:before,
+#masthead-search .search-btn-component .yt-uix-button-content
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
 /* Background colouring */
-body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-discussion, #yt-masthead-container, #footer-container {
+body, #page, #watch7-creator-bar,
+#watch-header, #action-panel-details, #watch-discussion,
+#yt-masthead-container, #footer-container {
 	background-color: #292929 !important;
 }
 #yt-masthead-container {
-	border-bottom-color: #5f5f5f !important;
+	border-bottom-color: #070707 !important;
 }
 #masthead-appbar {
 	background: #292929 !important;
-	border-bottom-color: #5f5f5f !important;
+	border-bottom-color: #070707 !important;
 }
 #watch-description-clip {
 	color: white !important;
@@ -51,7 +60,8 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 #watch7-creator-bar-nav-buttons a,
 #watch-header > #watch7-user-header > #watch7-subscription-container a,
 .watch-title .watch-pencil-icon,
-#action-panel-details .watch-pencil-icon {
+#action-panel-details .watch-pencil-icon,
+#upload-btn, #search-btn {
 	border-color: #070707 !important;
 	background: #292929 !important;
 	color: white !important;
@@ -157,7 +167,11 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 /*
  *	Comments START
  */
- /* Primary comment colour */
+/* "Add a public comment..." */
+.comment-simplebox-renderer {
+	border-bottom-color: #070707 !important;
+}
+/* Primary comment colour */
 .comment-renderer-text-content {
 	color: white;
 }
