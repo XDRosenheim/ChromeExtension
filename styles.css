@@ -71,7 +71,8 @@ body, #page, #watch7-creator-bar,
 #upload-btn, #search-btn,
 #watch-discussion > #comment-section-renderer > .yt-uix-menu > button,
 #footer-container > #footer > #footer-main > a,
-#footer-container > #footer > #footer-main button {
+#footer-container > #footer > #footer-main button,
+#comment-simplebox-create-comment button.yt-uix-button-default {
 	border-color: #070707 !important;
 	background: #292929 !important;
 	color: white !important;
@@ -177,9 +178,25 @@ body, #page, #watch7-creator-bar,
 /*
  *	Comments START
  */
+.comment-section-header-renderer {
+	color: #b8b8b8 !important;
+}
 /* "Add a public comment..." */
 .comment-simplebox-renderer {
 	border-bottom-color: #070707 !important;
+}
+.comment-simplebox-renderer-collapsed-content {
+	border-color: #070707 !important;
+}
+.comment-simplebox.focus .comment-simplebox-frame {
+	border-color: green !important;
+}
+.comment-simplebox-text, .comment-simplebox-prompt {
+	background-color: #292929 !important;
+	color: white !important;
+}
+.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer {
+	display: none;
 }
 /* Primary comment colour */
 .comment-renderer-text-content {
@@ -189,14 +206,14 @@ body, #page, #watch7-creator-bar,
 .comment-author-text {
 	color: #128ee9;
 }
-/* Give OP a new colour + "[OP]"-tag*/
+/* Give OP a new colour + "[OP]"-tag */
 .comment-renderer.channel-owner .comment-author-text,
 .comment-renderer.channel-owner .comment-author-text::before {
 	background: #292929 !important;
 	color: #128E42;
 	content: "[OP] ";
 }
-/* Textbox box boxbox box*/
+/* Textbox box boxbox box */
 .comment-simplebox {
 	background: #292929 !important;
 }
@@ -204,11 +221,11 @@ body, #page, #watch7-creator-bar,
 .comment-simplebox-arrow .arrow-inner {
 	border: 7px solid #292929 !important;
 }
-/* Reply text*/
+/* Reply text */
 #comment-section-renderer .comment-renderer-reply {
 	color: #cccccc !important;
 }
-/* Comment score*/
+/* Comment score */
 .comment-renderer-like-count {
 	color: rgb(255, 240, 40) !important;
 }
