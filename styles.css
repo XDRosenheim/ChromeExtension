@@ -1,6 +1,7 @@
 /*
 	Borders 	#070707
 	Text 		#FFFFFF
+	Links		#167ac6
 	Backgrounds #292929
 */
 
@@ -23,7 +24,8 @@ input[type="radio" i],
 input[type="checkbox" i],
 .yt-ui-menu-item.has-icon:before,
 .watch-pencil-icon:before,
-#masthead-search .search-btn-component .yt-uix-button-content
+#masthead-search .search-btn-component .yt-uix-button-content,
+.autoplay-bar .autoplay-info-icon
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -200,7 +202,7 @@ body, #page, #watch7-creator-bar,
 }
 /* Comment score*/
 .comment-renderer-like-count {
-	color: rgb(255, 240, 40);
+	color: rgb(255, 240, 40) !important;
 }
 /* Sorting button (Top or new comments) */
 #watch-discussion > #comment-section-renderer > .yt-uix-menu > button {
@@ -221,6 +223,42 @@ body, #page, #watch7-creator-bar,
 }
 /*
  *	Comments END
+ */
+/*
+ *	Recommended list START
+ */
+#watch-channel-brand-div-text {
+	display: block !important;
+}
+#watch7-sidebar .watch-sidebar-head {
+	color: white !important;
+}
+#watch7-sidebar .watch-sidebar-separation-line {
+	border-bottom-color: #070707 !important;
+}
+.video-list .video-list-item .title {
+	color: white !important;
+}
+.video-list .video-list-item .content-wrapper:hover .title {
+	color: #167ac6 !important;
+}
+.yt-badge-list {
+	background-color: #9B0000;
+	border-color: #070707;
+}
+.yt-badge {
+	color: white !important;
+}
+.standalone-collection-badge-renderer-icon {
+	background-color: #292929 !important;
+	color: white !important;
+	border-color: #EB0D0D !important;
+}
+.standalone-collection-badge-renderer-text {
+	color: #777 !important;
+}
+/*
+ *	Recommended list END
  */
 /*
  *	Watch END
