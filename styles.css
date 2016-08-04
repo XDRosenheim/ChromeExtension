@@ -14,7 +14,9 @@
 .add-to-widget .public-icon,
 .yt-uix-form-input-radio-container, .yt-uix-form-input-checkbox-container,
 input[type="radio" i],
-input[type="checkbox" i]
+input[type="checkbox" i],
+.yt-ui-menu-item.has-icon:before,
+.watch-pencil-icon:before
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -45,24 +47,30 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 .yt-uix-menu-trigger-selected .yt-ui-menu-item, .yt-ui-menu-item:hover {
 	background: #3C3C3C !important;
 }
+/* Button colouring */
+#watch7-creator-bar-nav-buttons a,
+#watch-header > #watch7-user-header > #watch7-subscription-container a,
+.watch-title .watch-pencil-icon,
+#action-panel-details .watch-pencil-icon {
+	border-color: #070707 !important;
+	background: #292929 !important;
+	color: white !important;
+}
 /*
  *	Watch START
  */
 /*
  *	Owner START
  */
-#watch7-creator-bar-nav-buttons a {
-	border-color: #070707 !important;
-	background: #292929 !important;
-	color: white !important;
-}
 #watch7-creator-bar {
 	border: 0 !important; /* I don't get why they made a border for this one... */
 }
-.yt-ui-menu-item.has-icon:before {
-	-webkit-filter: grayscale(1) invert(1);
+.watch-editable:hover {
+	background-color: #313131 !important;
 }
-#watch-header > #watch7-headline > #watch-headline-title > 
+#watch-headline-title > h1 > button {
+	display: none;
+}
 /*
  *	Owner END
  */
@@ -73,21 +81,12 @@ body, #page, #watch7-creator-bar, #watch-header, #action-panel-details, #watch-d
 	background: #292929;
 	color: #BFBFBF;
 }
-#watch-headline-title .watch-title:hover {
-	background: #4A4A4A;
-	color: #BFBFBF;
-}
 /* OP name*/
 #watch-header .yt-user-info a {
 	color: #128E42 !important;
 }
 #watch-header > #watch8-action-buttons {
 	border-top-color: #070707 !important;
-}
-#watch-header > #watch7-user-header > #watch7-subscription-container a {
-	border-color: #070707 !important;
-	background: #292929 !important;
-	color: white !important;
 }
 /*
  *	Add to... START
