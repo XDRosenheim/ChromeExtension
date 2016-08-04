@@ -30,7 +30,8 @@ input[type="checkbox" i],
 #footer .yt-uix-button-icon-footer-history,
 #footer .yt-uix-button-icon-questionmark,
 .yt-uix-button-arrow,
-#footer-logo .footer-logo-icon
+#footer-logo .footer-logo-icon,
+.yt-uix-button-arrow
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -79,6 +80,24 @@ body, #page, #watch7-creator-bar,
 	color: white !important;
 }
 /*
+ *	Home START
+ */
+.webkit .yt-ui-ellipsis-2 {
+	background-color: #292929 !important;
+}
+.branded-page-module-title-text {
+	color: white;
+}
+.branded-page-module-title-text:hover {
+	color: #167ac6 !important;
+}
+#browse-items-primary .item-section>li>.yt-lockup-tile, .branded-page-v2-primary-col .branded-page-box, .section-list li .item-section .branded-page-box {
+	border-color: #070707 !important;
+}
+/*
+ *	Home END
+ */
+/*
  *	Watch START
  */
 /*
@@ -106,6 +125,12 @@ body, #page, #watch7-creator-bar,
 /* OP name*/
 #watch-header .yt-user-info a {
 	color: #128E42 !important;
+}
+/* Sub counter */
+.yt-subscription-button-subscriber-count-branded-horizontal, .yt-subscription-button-subscriber-count-unbranded-horizontal {
+	background-color: #292929 !important;
+	color: white !important;
+	border-color: #e62117 !important;
 }
 #watch-header > #watch8-action-buttons {
 	border-top-color: #070707 !important;
