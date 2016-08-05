@@ -31,21 +31,31 @@ input[type="checkbox" i],
 #footer .yt-uix-button-icon-questionmark,
 .yt-uix-button-arrow,
 #footer-logo .footer-logo-icon,
-.yt-uix-button-arrow
+.yt-uix-button-arrow,
+.yt-uix-shelfslider .yt-uix-shelfslider-prev,
+.yt-uix-shelfslider .yt-uix-shelfslider-next
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
 /* Background colouring */
 body, #page, #watch7-creator-bar,
 #watch-header, #action-panel-details, #watch-discussion,
-#yt-masthead-container, #footer-container {
+#yt-masthead-container, #footer-container,
+#masthead-appbar,
+.yt-card, .webkit .yt-ui-ellipsis-2,
+.yt-subscription-button-subscriber-count-branded-horizontal,
+.yt-subscription-button-subscriber-count-unbranded-horizontal,
+.comment-simplebox-text, .comment-simplebox-prompt,
+.comment-replies-renderer-expander-down,
+.standalone-collection-badge-renderer-icon,
+.yt-consent-banner {
 	background-color: #292929 !important;
 }
+
 #yt-masthead-container {
 	border-bottom-color: #070707 !important;
 }
 #masthead-appbar {
-	background: #292929 !important;
 	border-bottom-color: #070707 !important;
 }
 #watch-description-clip {
@@ -59,7 +69,6 @@ body, #page, #watch7-creator-bar,
 }
 .yt-card {
 	box-shadow: 0 1px 2px rgba(0,0,0,.75) !important;
-	background-color: #292929 !important;
 }
 .yt-uix-menu-trigger-selected .yt-ui-menu-item, .yt-ui-menu-item:hover {
 	background: #3C3C3C !important;
@@ -67,14 +76,14 @@ body, #page, #watch7-creator-bar,
 /* Button colouring */
 #watch7-creator-bar-nav-buttons a,
 #watch-header > #watch7-user-header > #watch7-subscription-container a,
-.watch-title .watch-pencil-icon,
 #action-panel-details .watch-pencil-icon,
 #upload-btn, #search-btn,
 #watch-discussion > #comment-section-renderer > .yt-uix-menu > button,
 #footer-container > #footer > #footer-main > a,
 #footer-container > #footer > #footer-main button,
 #comment-simplebox-create-comment button.yt-uix-button-default,
-#masthead-positioner > .yt-consent > .yt-consent-buttons > button.consent-close {
+#masthead-positioner > .yt-consent > .yt-consent-buttons > button.consent-close,
+.watch-title .watch-pencil-icon, {
 	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
@@ -82,9 +91,6 @@ body, #page, #watch7-creator-bar,
 /*
  *	Home START
  */
-.webkit .yt-ui-ellipsis-2 {
-	background-color: #292929 !important;
-}
 .branded-page-module-title-text {
 	color: white;
 }
@@ -132,7 +138,6 @@ body, #page, #watch7-creator-bar,
 }
 /* Sub counter */
 .yt-subscription-button-subscriber-count-branded-horizontal, .yt-subscription-button-subscriber-count-unbranded-horizontal {
-	background-color: #292929 !important;
 	color: white !important;
 	border-color: #e62117 !important;
 }
@@ -217,12 +222,12 @@ body, #page, #watch7-creator-bar,
 }
 .comment-simplebox-renderer-collapsed-content {
 	border-color: #070707 !important;
+	border-color: #070707 !important;
 }
 .comment-simplebox.focus .comment-simplebox-frame {
 	border-color: green !important;
 }
 .comment-simplebox-text, .comment-simplebox-prompt {
-	background-color: #292929 !important;
 	color: white !important;
 }
 .comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer {
@@ -259,6 +264,11 @@ body, #page, #watch7-creator-bar,
 .comment-renderer-like-count {
 	color: rgb(255, 240, 40) !important;
 }
+/* "View all x replies" */
+.comment-replies-renderer-expander-down {
+	border: 0;
+	color: #167ac6 !important;
+}
 .yt-uix-button-default:active, .yt-uix-button-default.yt-uix-button-toggled, .yt-uix-button-default.yt-uix-button-active, .yt-uix-button-default.yt-uix-button-active:focus, .yt-uix-button-text:active {
 	box-shadow: inset 0 1px rgba(0,0,0,.75) !important;
 }
@@ -287,6 +297,7 @@ body, #page, #watch7-creator-bar,
 }
 .video-list .video-list-item .title {
 	color: white !important;
+	max-height: 3.5em;
 }
 .video-list .video-list-item .content-wrapper:hover .title {
 	color: #167ac6 !important;
@@ -299,7 +310,6 @@ body, #page, #watch7-creator-bar,
 	color: white !important;
 }
 .standalone-collection-badge-renderer-icon {
-	background-color: #292929 !important;
 	color: white !important;
 	border-color: #EB0D0D !important;
 }
@@ -323,10 +333,8 @@ body, #page, #watch7-creator-bar,
 	color: #167ac6 !important;
 }
 
-
 /* Consent */
 .yt-consent-banner {
-	background-color: #292929 !important;
 	border-bottom-color: #070707 !important;
 }
 .yt-consent-banner .yt-consent-content{
