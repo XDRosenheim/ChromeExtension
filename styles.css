@@ -114,7 +114,8 @@ body, #page, #watch7-creator-bar,
 #browse-items-primary > li > button,
 .about-actions > button,
 .send-button-info > button,
-.browse-items-load-more-button {
+.browse-items-load-more-button,
+.comment-section-renderer-paginator {
 	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
