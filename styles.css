@@ -58,8 +58,12 @@ body, #page, #watch7-creator-bar,
 .yt-consent-banner,
 .webkit .yt-ui-ellipsis-3,
 .webkit .yt-uix-expander-collapsed .yt-ui-ellipsis,
-.video-player-view-component .description {
+.video-player-view-component .description,
+#guide-container {
 	background-color: #292929 !important;
+}
+.guide-item {
+	color: white !important;
 }
 #yt-masthead-container {
 	border-bottom-color: #070707 !important;
@@ -145,11 +149,15 @@ body, #page, #watch7-creator-bar,
 .epic-nav-item-heading {
 	color: white !important;
 }
-#browse-items-primary .item-section>li>.yt-lockup-tile,
+#browse-items-primary .item-section > li > .yt-lockup-tile,
 .branded-page-v2-primary-col .branded-page-box,
 .section-list li .item-section .branded-page-box,
 .branded-page-v2-subnav-container,
-.about-metadata-label-border-top {
+.about-metadata-label-border-top,
+#appbar-guide-menu,
+.guide-section-separator,
+body #footer-container,
+#footer-main {
 	border-color: #070707 !important;
 }
 .about-description pre {
