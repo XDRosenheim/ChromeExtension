@@ -33,7 +33,10 @@ input[type="checkbox" i],
 #footer-logo .footer-logo-icon,
 .yt-uix-button-arrow,
 .yt-uix-shelfslider .yt-uix-shelfslider-prev,
-.yt-uix-shelfslider .yt-uix-shelfslider-next
+.yt-uix-shelfslider .yt-uix-shelfslider-next,
+.yt-uix-button.yt-uix-button-subscribed-branded::before,
+.yt-uix-button-subscribed-branded:before,
+.yt-uix-subscription-preferences-button:before
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -51,7 +54,6 @@ body, #page, #watch7-creator-bar,
 .yt-consent-banner {
 	background-color: #292929 !important;
 }
-
 #yt-masthead-container {
 	border-bottom-color: #070707 !important;
 }
@@ -83,14 +85,13 @@ body, #page, #watch7-creator-bar,
 #footer-container > #footer > #footer-main button,
 #comment-simplebox-create-comment button.yt-uix-button-default,
 #masthead-positioner > .yt-consent > .yt-consent-buttons > button.consent-close,
-.watch-title .watch-pencil-icon, {
+.watch-title .watch-pencil-icon,
+.yt-uix-button.yt-uix-button-subscribed-branded,
+.yt-uix-button-subscribed-branded+.yt-uix-subscription-preferences-button {
 	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
 }
-/*
- *	Home START
- */
 .branded-page-module-title-text {
 	color: white;
 }
@@ -100,18 +101,9 @@ body, #page, #watch7-creator-bar,
 #browse-items-primary .item-section>li>.yt-lockup-tile, .branded-page-v2-primary-col .branded-page-box, .section-list li .item-section .branded-page-box {
 	border-color: #070707 !important;
 }
-/*
- *	Home END
- */
-/*
- *	Watch START
- */
 #watch7-headline h1 {
 	color: white !important;
 }
-/*
- *	Owner START
- */
 #watch7-creator-bar {
 	border: 0 !important; /* I don't get why they made a border for this one... */
 }
@@ -122,38 +114,32 @@ body, #page, #watch7-creator-bar,
 #watch-headline-title > h1 > button {
 	display: none;
 }
-/*
- *	Owner END
- */
-/*
- *	Header START
- */
 #watch-headline-title .watch-title {
 	background: #292929;
 	color: #BFBFBF;
 }
-/* OP name*/
 #watch-header .yt-user-info a {
 	color: #128E42 !important;
 }
-/* Sub counter */
-.yt-subscription-button-subscriber-count-branded-horizontal, .yt-subscription-button-subscriber-count-unbranded-horizontal {
+.yt-subscription-button-subscriber-count-branded-horizontal,
+.yt-subscription-button-subscriber-count-unbranded-horizontal,
+.yt-uix-button.yt-uix-button-subscribed-branded,
+.yt-uix-button-subscribed-branded+.yt-uix-subscription-preferences-button {
 	color: white !important;
 	border-color: #e62117 !important;
 }
 #watch-header > #watch8-action-buttons {
 	border-top-color: #070707 !important;
 }
-/*
- *	Add to... START
- */
 #yt-uix-videoactionmenu-menu > .hide-on-create-pl-panel h3 {
 	color: white !important;
 }
 .add-to-widget .addto-playlist-item {
 	color: white !important;
 }
-.add-to-widget .addto-playlist-item:hover, .add-to-widget .create-playlist-item:hover, .add-to-widget .addto-playlist-item.yt-uix-kbd-nav-highlight {
+.add-to-widget .addto-playlist-item:hover,
+.add-to-widget .create-playlist-item:hover,
+.add-to-widget .addto-playlist-item.yt-uix-kbd-nav-highlight {
 	background-color: #4A4A4A !important;
 }
 .add-to-widget > .yt-spinner {
@@ -165,16 +151,14 @@ body, #page, #watch7-creator-bar,
 .add-to-widget .create-playlist-item {
 	color: white !important;
 }
-/*
- *	Add to... END
- */
-/*
- *	Share START
- */
-.yt-card .yt-uix-tabs .yt-uix-button:hover, .yt-card .yt-uix-tabs .yt-uix-button:active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active, .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled {
+.yt-card .yt-uix-tabs .yt-uix-button:hover,
+.yt-card .yt-uix-tabs .yt-uix-button:active,
+.yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active,
+.yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled {
 	color: white !important;
 }
-.yt-uix-button-text, .yt-uix-button-text[disabled] {
+.yt-uix-button-text,
+.yt-uix-button-text[disabled] {
 	color: #ccc !important;
 }
 .yt-card .yt-uix-tabs {
@@ -189,34 +173,19 @@ body, #page, #watch7-creator-bar,
 .share-panel {
 	color: white !important;
 }
-/*
- *	Share END
- */
-/*
- *	Header END
- */
-/*
- *	Description START
- */
 #action-panel-details a {
 	color: #167ac6 !important;
 }
 .yt-card .yt-uix-button-expander {
 	border-top: 0 !important;
 }
-.watch-extras-section .title, .watch-extras-section .content > .title {
+.watch-extras-section .title,
+.watch-extras-section .content > .title {
 	color: white;
 }
-/*
- *	Description END
- */
-/*
- *	Comments START
- */
 .comment-section-header-renderer {
 	color: #b8b8b8 !important;
 }
-/* "Add a public comment..." */
 .comment-simplebox-renderer {
 	border-bottom-color: #070707 !important;
 }
@@ -227,49 +196,47 @@ body, #page, #watch7-creator-bar,
 .comment-simplebox.focus .comment-simplebox-frame {
 	border-color: green !important;
 }
-.comment-simplebox-text, .comment-simplebox-prompt {
+.comment-simplebox-text,
+.comment-simplebox-prompt {
 	color: white !important;
 }
-.comment-simplebox-arrow .arrow-inner, .comment-simplebox-arrow .arrow-outer {
+.comment-simplebox-arrow .arrow-inner,
+.comment-simplebox-arrow .arrow-outer {
 	display: none;
 }
-/* Primary comment colour */
 .comment-renderer-text-content {
 	color: white;
 }
-/* Coloured names */
 .comment-author-text {
 	color: #128ee9;
 }
-/* Give OP a new colour + "[OP]"-tag */
 .comment-renderer.channel-owner .comment-author-text,
 .comment-renderer.channel-owner .comment-author-text::before {
 	background: #292929 !important;
 	color: #128E42;
 	content: "[OP] ";
 }
-/* Textbox box boxbox box */
 .comment-simplebox {
 	background: #292929 !important;
 }
-/* That little arrow on comment textbox */
 .comment-simplebox-arrow .arrow-inner {
 	border: 7px solid #292929 !important;
 }
-/* Reply text */
 #comment-section-renderer .comment-renderer-reply {
 	color: #cccccc !important;
 }
-/* Comment score */
 .comment-renderer-like-count {
 	color: rgb(255, 240, 40) !important;
 }
-/* "View all x replies" */
 .comment-replies-renderer-expander-down {
 	border: 0;
 	color: #167ac6 !important;
 }
-.yt-uix-button-default:active, .yt-uix-button-default.yt-uix-button-toggled, .yt-uix-button-default.yt-uix-button-active, .yt-uix-button-default.yt-uix-button-active:focus, .yt-uix-button-text:active {
+.yt-uix-button-default:active,
+.yt-uix-button-default.yt-uix-button-toggled,
+.yt-uix-button-default.yt-uix-button-active,
+.yt-uix-button-default.yt-uix-button-active:focus,
+.yt-uix-button-text:active {
 	box-shadow: inset 0 1px rgba(0,0,0,.75) !important;
 }
 .yt-ui-menu-content {
@@ -280,12 +247,6 @@ body, #page, #watch7-creator-bar,
 .yt-ui-menu-item-label {
 	color: white !important;
 }
-/*
- *	Comments END
- */
-/*
- *	Recommended list START
- */
 #watch-channel-brand-div-text {
 	display: block !important;
 }
@@ -316,24 +277,15 @@ body, #page, #watch7-creator-bar,
 .standalone-collection-badge-renderer-text {
 	color: #777 !important;
 }
-/*
- *	Recommended list END
- */
-/*
- *	Watch END
- */
 .content-region {
 	color: white !important;
 }
 .feed .not-fixed-width-tab-widescreen .clearfix {
 	background: red;
 }
-/* Footer */
 #footer-links-primary a {
 	color: #167ac6 !important;
 }
-
-/* Consent */
 .yt-consent-banner {
 	border-bottom-color: #070707 !important;
 }
