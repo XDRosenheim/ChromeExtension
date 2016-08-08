@@ -4,16 +4,15 @@
 	Links		#167ac6
 	Backgrounds #292929
 */
-
 /* Most things are perfect for grayscaling. */
-#yt-masthead #logo-container .logo, /* YouTube logo */
-#yt-masthead-user .yt-uix-button-icon-bell, /* Notification icon */
+#yt-masthead #logo-container .logo,
+#yt-masthead-user .yt-uix-button-icon-bell,
 #masthead-appbar-containe,
 #comment-section-renderer .comment-renderer-footer .sprite-comment-actions,
-.creator-bar-item .yt-uix-button-text-dark, /* Owner video options*/
-#watch8-action-buttons .yt-uix-button, /* Add to / share / More   etc. */
-#watch8-action-buttons .yt-uix-button:hover, 
-#action-panel-dismiss, 
+.creator-bar-item .yt-uix-button-text-dark,
+#watch8-action-buttons .yt-uix-button,
+#watch8-action-buttons .yt-uix-button:hover,
+#action-panel-dismiss,
 #action-panel-dismiss:hover,
 .yt-card .yt-uix-button-expander:hover,
 #watch-header > #watch7-user-header > #watch7-subscription-container a::before,
@@ -40,7 +39,9 @@ input[type="checkbox" i],
 #channel-search .show-search .search-icon,
 .play-all-icon-btn:before,
 .yt-uix-button-icon-channel-back,
-.yt-uix-button-icon-report-user
+.yt-uix-button-icon-report-user,
+.flag-channel-abuse-form .report-question-mark,
+#report-form-modal-renderer .yt-dialog-base .yt-dialog-header .yt-dialog-close .yt-uix-button-content
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -59,11 +60,43 @@ body, #page, #watch7-creator-bar,
 .webkit .yt-ui-ellipsis-3,
 .webkit .yt-uix-expander-collapsed .yt-ui-ellipsis,
 .video-player-view-component .description,
-#guide-container {
+#guide-container,
+.yt-dialog-fg,
+.yt-dialog-footer,
+.yt-uix-overlay-actions {
 	background-color: #292929 !important;
 }
-.guide-item {
+/* Primary text colour */
+.guide-item,
+#watch-description-clip,
+#appbar-nav .epic-nav-item-heading,
+.yt-uix-button.yt-uix-button-subscribe-unbranded,
+.branded-page-module-title,
+.channel-header .branded-page-header-title .branded-page-header-title-link,
+.branded-page-module-title a:visited, .branded-page-module-title a,
+.branded-page-related-channels h3 a,
+.branded-page-v2-secondary-col .branded-page-related-channels-see-more a,
+.epic-nav-item-heading,
+.about-description pre,
+.about-metadata-label,
+.country-container,
+#watch7-headline h1,
+.yt-dialog-fg-content,
+.yt-dialog-title,
+.flag-channel-overlay-0 p,
+.flag-channel-overlay-1 p,
+.flag-channel-overlay-2 p {
 	color: white !important;
+}
+.flag-channel-overlay-1 p.warning,
+.flag-channel-overlay-2 p.warning {
+	color: red !important;
+}
+.yt-dialog-base {
+	background-color: rgba(0,0,0,0.75);
+}
+.yt-dialog-fg {
+	box-shadow: rgba(0,0,0,0.75);
 }
 #yt-masthead-container {
 	border-bottom-color: #070707 !important;
@@ -71,16 +104,9 @@ body, #page, #watch7-creator-bar,
 #masthead-appbar {
 	border-bottom-color: #070707 !important;
 }
-#watch-description-clip {
-	color: white !important;
-}
-#appbar-nav .epic-nav-item-heading {
-	color: white !important;
-}
 .yt-uix-button.yt-uix-button-subscribe-unbranded {
 	background-color: #e62117 !important;
 	border-color: #e62117 !important;
-	color: white !important;
 }
 .lohp-video-metadata .view-count {
 	color: #767676 !important;
@@ -104,8 +130,8 @@ body, #page, #watch7-creator-bar,
 #footer-container > #footer > #footer-main button,
 #comment-simplebox-create-comment button.yt-uix-button-default,
 #masthead-positioner > .yt-consent > .yt-consent-buttons > button.consent-close,
-#browse-items-primary 
-.watch-title .watch-pencil-icon,
+#browse-items-primary,
+#eow-title .watch-pencil-icon,
 .yt-uix-button.yt-uix-button-subscribed-branded,
 .yt-uix-button-subscribed-branded+.yt-uix-subscription-preferences-button,
 .yt-uix-button.yt-uix-button-subscribed-unbranded,
@@ -115,40 +141,17 @@ body, #page, #watch7-creator-bar,
 .about-actions > button,
 .send-button-info > button,
 .browse-items-load-more-button,
-.comment-section-renderer-paginator {
+.comment-section-renderer-paginator,
+.feedback-banner {
 	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
 }
-.branded-page-module-title {
-	color: white !important;
-}
-.channel-header .branded-page-header-title .branded-page-header-title-link {
-	color: white !important;
-}
-.channel-header .branded-page-header-title .branded-page-header-title-link:hover {
-	color: #167ac6 !important;
-}
-.branded-page-module-title a:visited, .branded-page-module-title a {
-	color: white !important;
-}
-.branded-page-module-title a:visited, .branded-page-module-title a:hover {
-	color: #167ac6 !important;
-}
-.branded-page-related-channels h3 a {
-	color: white !important;
-}
-.branded-page-related-channels h3 a:hover {
-	color: #167ac6 !important;
-}
-.branded-page-v2-secondary-col .branded-page-related-channels-see-more a {
-	color: white !important;
-}
+.channel-header .branded-page-header-title .branded-page-header-title-link:hover,
+.branded-page-module-title a:visited, .branded-page-module-title a:hover,
+.branded-page-related-channels h3 a:hover,
 .branded-page-v2-secondary-col .branded-page-related-channels-see-more a:hover {
 	color: #167ac6 !important;
-}
-.epic-nav-item-heading {
-	color: white !important;
 }
 #browse-items-primary .item-section > li > .yt-lockup-tile,
 .branded-page-v2-primary-col .branded-page-box,
@@ -158,36 +161,25 @@ body, #page, #watch7-creator-bar,
 #appbar-guide-menu,
 .guide-section-separator,
 body #footer-container,
-#footer-main {
+#footer-main,
+.flag-channel-abuse-form hr,
+.comment-simplebox-frame {
 	border-color: #070707 !important;
 }
-.about-description pre {
-	color: white !important;
-}
 .about-metadata-label {
-	color: white !important;
 	font-size: 150%;
 }
-.country-container {
-	color: white !important;
-}
-#watch7-headline h1 {
-	color: white !important;
-}
-#watch7-creator-bar {
-	border: 0 !important; /* I don't get why they made a border for this one... */
-}
-.watch-editable:hover {
-	background: #4A4A4A !important;
-	color: #BFBFBF !important;
+#watch7-creator-bar,
+.yt-dialog-fg {
+	border: 0 !important;
 }
 #watch-headline-title > h1 > button {
 	display: none;
 }
 #watch-headline-title .watch-title,
-.watch-view-count {
-	background: #292929;
-	color: #BFBFBF !important;
+.watch-view-count,
+.watch-editable:hover {
+	background-color: #292929 !important;
 }
 #watch-header .yt-user-info a {
 	color: #128E42 !important;
