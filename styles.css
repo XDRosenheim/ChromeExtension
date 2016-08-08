@@ -114,9 +114,10 @@ body, #page, #watch7-creator-bar,
 #watch-headline-title > h1 > button {
 	display: none;
 }
-#watch-headline-title .watch-title {
+#watch-headline-title .watch-title,
+.watch-view-count {
 	background: #292929;
-	color: #BFBFBF;
+	color: #BFBFBF !important;
 }
 #watch-header .yt-user-info a {
 	color: #128E42 !important;
