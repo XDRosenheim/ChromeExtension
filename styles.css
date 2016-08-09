@@ -3,6 +3,7 @@
 	Text 		#FFFFFF
 	Links		#167ac6
 	Backgrounds #292929
+	Red 		#cc181e
 */
 /* Most things are perfect for grayscaling. */
 #yt-masthead #logo-container .logo,
@@ -41,7 +42,12 @@ input[type="checkbox" i],
 .yt-uix-button-icon-channel-back,
 .yt-uix-button-icon-report-user,
 .flag-channel-abuse-form .report-question-mark,
-#report-form-modal-renderer .yt-dialog-base .yt-dialog-header .yt-dialog-close .yt-uix-button-content
+#report-form-modal-renderer .yt-dialog-base .yt-dialog-header .yt-dialog-close .yt-uix-button-content,
+.c4-editor-plus:before,
+.c4-module-editor-delete:before,
+.c4-editor-edit:before,
+.c4-editor-move-down:before,
+.c4-editor-move-up:before
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
@@ -63,13 +69,17 @@ body, #page, #watch7-creator-bar,
 #guide-container,
 .yt-dialog-fg,
 .yt-dialog-footer,
-.yt-uix-overlay-actions {
+.yt-uix-overlay-actions,
+.c4-empty-shelf-container .branded-page-box,
+.c4-shelf-preview,
+.branded-page-v2-primary-col .branded-page-box {
 	background-color: #292929 !important;
 }
 /* Primary text colour */
 .guide-item,
 #watch-description-clip,
 #appbar-nav .epic-nav-item-heading,
+.epic-nav-item.selected,
 .yt-uix-button.yt-uix-button-subscribe-unbranded,
 .branded-page-module-title,
 .channel-header .branded-page-header-title .branded-page-header-title-link,
@@ -85,15 +95,25 @@ body, #page, #watch7-creator-bar,
 .yt-dialog-title,
 .flag-channel-overlay-0 p,
 .flag-channel-overlay-1 p,
-.flag-channel-overlay-2 p {
+.flag-channel-overlay-2 p,
+.yt-uix-form-label {
 	color: white !important;
+}
+.yt-combobox-menu-item:hover {
+	background-color: #303030 !important;
 }
 .flag-channel-overlay-1 p.warning,
 .flag-channel-overlay-2 p.warning {
 	color: red !important;
 }
+.yt-ui-menu-item:focus {
+	background: 0 !important;
+}
 .yt-dialog-base {
 	background-color: rgba(0,0,0,0.75);
+}
+#c4-spotlight-editor .spotlight-editor-tab {
+	border-color: #cc181c !important;
 }
 .yt-dialog-fg {
 	box-shadow: rgba(0,0,0,0.75);
@@ -142,10 +162,16 @@ body, #page, #watch7-creator-bar,
 .send-button-info > button,
 .browse-items-load-more-button,
 .comment-section-renderer-paginator,
-.feedback-banner {
+.feedback-banner,
+.c4-empty-module button,
+.c4-module-editor-actions > button {
 	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
+}
+.c4-module-editor-delete {
+	background-color: #cc181e !important;
+	border-color: #cc0000 !important;
 }
 .channel-header .branded-page-header-title .branded-page-header-title-link:hover,
 .branded-page-module-title a:visited, .branded-page-module-title a:hover,
@@ -163,7 +189,9 @@ body, #page, #watch7-creator-bar,
 body #footer-container,
 #footer-main,
 .flag-channel-abuse-form hr,
-.comment-simplebox-frame {
+.comment-simplebox-frame,
+.c4-shelf-preview,
+.yt-combobox-menu .yt-combobox-menu-content-list {
 	border-color: #070707 !important;
 }
 .about-metadata-label {
@@ -219,6 +247,9 @@ body #footer-container,
 .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-active,
 .yt-card .yt-uix-tabs .yt-uix-button.yt-uix-button-toggled {
 	color: white !important;
+}
+.c4-shelf-preview+.preview-click-guard, {
+	background: 0 !important;
 }
 .yt-uix-button-text,
 .yt-uix-button-text[disabled] {
@@ -300,7 +331,8 @@ body #footer-container,
 .yt-uix-button-default.yt-uix-button-active,
 .yt-uix-button-default.yt-uix-button-active:focus,
 .yt-uix-button-text:active {
-	box-shadow: inset 0 1px rgba(0,0,0,.75) !important;
+	box-shadow: 0;
+	border: 0;
 }
 .yt-ui-menu-content {
 	background: #292929 !important;
