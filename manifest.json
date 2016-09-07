@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
  
-  "name": "Night/Dark mode for YouTube",
+  "name": "Dark YouTube",
   "short_name": "Dark YouTube",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Makes YouTube browsing a little bit better for your eyes.",
  
   "content_scripts": [{
