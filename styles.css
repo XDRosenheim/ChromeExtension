@@ -5,11 +5,11 @@
 	Backgrounds #292929
 	Red 		#cc181e
 */
+
 /* Most things are perfect for grayscaling. */
 #action-panel-dismiss,
 #action-panel-dismiss:hover,
 #channel-search .show-search .search-icon,
-#comment-section-renderer .comment-renderer-footer .sprite-comment-actions,
 #footer-logo .footer-logo-icon,
 #footer .yt-uix-button-icon-footer-language,
 #footer .yt-uix-button-icon-footer-history,
@@ -18,8 +18,6 @@
 #masthead-search .search-btn-component .yt-uix-button-content,
 #report-form-modal-renderer .yt-dialog-base .yt-dialog-header .yt-dialog-close .yt-uix-button-content,
 #watch-header > #watch7-user-header > #watch7-subscription-container a::before,
-#watch8-action-buttons .yt-uix-button,
-#watch8-action-buttons .yt-uix-button:hover,
 #yt-masthead #logo-container .logo,
 #yt-masthead-user .yt-uix-button-icon-bell,
 input[type="radio" i],
@@ -59,10 +57,26 @@ input[type="checkbox" i],
 .live-chat-widget .overflow-menu-button:before,
 .live-chat-widget .post-button::before,
 .live-chat-widget .actions-menu .yt-uix-button:before,
-.yt-close-img
+.yt-close-img,
+.like-button-renderer-like-button:before,
+.like-button-renderer-dislike-button:before,
+#action-panel-overflow-button:before, .action-panel-trigger-overflow:before,
+.action-panel-trigger-share:before,
+.addto-button:before,
+#comment-section-renderer .sprite-like:before,
+#comment-section-renderer .sprite-dislike:before
 {
 	-webkit-filter: grayscale(1) invert(1);
 }
+.like-button-renderer-like-button.yt-uix-button:active:before, .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before,
+#comment-section-renderer .sprite-like[data-action-on]:before,
+#comment-section-renderer .sprite-dislike[data-action-on]:before {
+	-webkit-filter: grayscale(0) invert(0) !important;
+}
+#comment-section-renderer .sprite-dislike[data-action-on]:before {
+	
+}
+
 /*
 	Background colouring
 */
@@ -174,13 +188,15 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 .upload-footer-header,
 .upload-sidebar-header,
 #loading-message,
-.yt-picker-content strong
+.yt-picker-content strong,
+#watch8-secondary-actions span
 {
 	color: white !important;
 }
 /* Primary text colour - Non-important */
 .todo-title-text,
-#subscription-manager-container .subscription-manager-title {
+#subscription-manager-container .subscription-manager-title,
+#watch-header > #watch8-action-buttons > #watch8-sentiment-actions button span {
 	color: white;
 }
 #watch7-creator-bar-nav-buttons a,
