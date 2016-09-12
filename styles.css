@@ -116,7 +116,9 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 .lohp-shelf-content a.lohp-video-link,
 .guide-pinned .guide-pinning-enabled #appbar-guide-menu,
 .feed-item-container .shelf-description,
-.live-chat-widget .comment
+.live-chat-widget .comment,
+#yt-picker-country-footer,
+#yt-picker-safetymode-footer
 {
 	background-color: #292929 !important;
 }
@@ -199,6 +201,7 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 #watch-header > #watch8-action-buttons > #watch8-sentiment-actions button span {
 	color: white;
 }
+/* Button colouring */
 #watch7-creator-bar-nav-buttons a,
 #watch-header > #watch7-user-header > #watch7-subscription-container a,
 #action-panel-details .watch-pencil-icon,
@@ -229,12 +232,16 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 #upload-hub-privacy-settings button,
 .upload-other-options-list .upload-option-button,
 #footer-main > button,
-#footer-main > ul.pickers button 
+#footer-main > ul.pickers button,
+#yt-picker-safetymode-footer #safety-form .safety-submit button[type="submit"]
 {
 	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
 	box-shadow: none;
+}
+.yt-uix-button-icon-dismissal {
+	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfl4TIZxK.webp) 5px -1288px
 }
 .upload-other-options-list .upload-option-text {
 	color: #666666 !important;
@@ -316,7 +323,9 @@ body #footer-container,
 #c4-spotlight-editor .spotlight-editor-tabs,
 #c4-header-bg-container,
 .channel-header .secondary-header-contents,
-.subscription-table-header {
+.subscription-table-header,
+.comment-simplebox-renderer-collapsed-content,
+.yt-lockup-notifications-container {
 	border-color: #070707 !important;
 }
 .about-metadata-label {
@@ -326,9 +335,6 @@ body #footer-container,
 .yt-dialog-fg,
 .c4-checklist-module {
 	border: 0 !important;
-}
-#watch-headline-title > h1 > button {
-	display: none;
 }
 #watch-headline-title .watch-title,
 .watch-view-count,
@@ -374,7 +380,8 @@ body #footer-container,
 .upload-help-link-list .help-item {
 	color: #167ac6 !important;
 }
-.yt-card .yt-uix-button-expander {
+.yt-card .yt-uix-button-expander,
+#yt-picker-safetymode-footer #safety-form .safety-submit {
 	border-top: 0 !important;
 }
 .comment-section-header-renderer {
@@ -385,13 +392,14 @@ body #footer-container,
 }
 .comment-simplebox-renderer-collapsed-content {
 	border-color: #070707 !important;
-	border-color: #070707 !important;
 }
 .comment-simplebox.focus .comment-simplebox-frame {
 	border-color: green !important;
 }
+#watch-headline-title > h1 > button,
 .comment-simplebox-arrow .arrow-inner,
-.comment-simplebox-arrow .arrow-outer {
+.comment-simplebox-arrow .arrow-outer,
+.yt-picker-hr {
 	display: none;
 }
 .comment-author-text {
