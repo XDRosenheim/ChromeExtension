@@ -130,7 +130,8 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 .feed-item-container .shelf-description,
 .live-chat-widget .comment,
 #yt-picker-country-footer,
-#yt-picker-safetymode-footer
+#yt-picker-safetymode-footer,
+#browse-items-primary .video-detail h3.title
 {
 	background-color: #292929 !important;
 }
