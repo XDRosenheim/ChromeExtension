@@ -1,11 +1,11 @@
 {
   "manifest_version": 2,
- 
+
   "name": "Dark YouTube",
   "short_name": "Dark YouTube",
   "version": "1.1.0",
   "description": "Makes YouTube browsing a little bit better for your eyes.",
- 
+
   "content_scripts": [{
     "matches": ["*://www.youtube.com/*"],
     "css": ["styles.css"]
