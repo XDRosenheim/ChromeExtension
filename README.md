@@ -1,5 +1,6 @@
 # Dark YouTube
 Just to clarify... This is not actively being worked on. I will see any issues that are made, and will try to get them fixed. But full updates may come slow.
+Every time I see something that annoys me, I will update the list of things to do. [See list here](https://github.com/XDRosenheim/ChromeExtension#to-be-worked-on)
 
 ## Downloads
 [Latest](https://github.com/XDRosenheim/ChromeExtension/releases/latest) *(github.com)*  
