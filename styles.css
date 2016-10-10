@@ -95,6 +95,10 @@ input[type="checkbox" i],
 {
 	-webkit-filter: grayscale(0) invert(0) !important;
 }
+/* Dat Dislike Button mann.... */
+.like-button-renderer-dislike-button:before {
+	-webkit-filter: hue-rotate(145deg) brightness(18) contrast(1130%)
+}
 /*
 	Background colouring
 */
