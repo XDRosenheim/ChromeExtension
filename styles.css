@@ -48,6 +48,7 @@ input[type="checkbox" i],
 .public-icon,
 .secondary-header-action .header-action-icon,
 .spotlight-privacy-btn:before,
+.vertical-shelf .vertical-shelf-expander:before,
 .watch-pencil-icon:before,
 .yt-card .yt-uix-button-expander:hover,
 .yt-close-img,
@@ -156,7 +157,20 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 }
 /* Primary text colour */
 #appbar-nav .epic-nav-item-heading,
+#creator-page #creator-sidebar .creator-sidebar-branding h1,
+#dashboard-header h2 a,
+#dashboard-header h3 a,
+#dashboard-header h3,
+#dashboard-header .dashboard-stat-value,
+#dashboard-header .dashboard-stat-name, 
+#dashboard-header .add-widget-button-label,
+#dashboard-header-stats li,
+#footer h3,
+#loading-message,
+#results #filter-dropdown .filter-col-title,
 #subscription-manager-container .subscription-title,
+#upload-button-text,
+#watch8-secondary-actions span,
 #watch-description-clip,
 #watch7-headline h1,
 #watch7-sidebar .watch-sidebar-head,
@@ -187,6 +201,7 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 .flag-channel-overlay-0 p,
 .flag-channel-overlay-1 p,
 .flag-channel-overlay-2 p,
+.guide-header p,
 .guide-item,
 .options-renderer-message-required,
 .secondary-header-contents .nav-text,
@@ -206,31 +221,19 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 .yt-consent-banner .yt-consent-content,
 .yt-dialog-fg-content,
 .yt-dialog-title,
+.yt-picker-content strong,
 .yt-ui-menu-item-label,
+.yt-uix-button-content,
+.yt-uix-button-menu-item,
 .yt-uix-button.yt-uix-button-subscribe-unbranded,
 .yt-uix-form-label,.c4-checklist-module .view-all-link,
-.guide-header p,
-#footer h3,
+.yt-uix-form-legend,
 .live-chat-widget .comment .comment-text,
 .live-chat-widget .comment.alternate-row .comment-text,
 .live-comments-popout-active-message,
 .live-chat-controls-container div.comments-textarea,
-#upload-button-text,
 .upload-footer-header,
 .upload-sidebar-header,
-#loading-message,
-.yt-picker-content strong,
-#watch8-secondary-actions span,
-#dashboard-header h2 a,
-#dashboard-header h3 a,
-#dashboard-header h3,
-#dashboard-header .dashboard-stat-value,
-#dashboard-header .dashboard-stat-name, 
-#dashboard-header .add-widget-button-label,
-#dashboard-header-stats li,
-#creator-page #creator-sidebar .creator-sidebar-branding h1,
-.yt-uix-button-menu-item,
-.yt-uix-form-legend,
 .pl-video-title-link,
 h1.pl-header-title {
 	color: white !important;
@@ -279,7 +282,10 @@ h1.pl-header-title {
 #about-metadata-form-custom-links > button.yt-uix-button-default,
 .playlist-actions a.yt-uix-button,
 .playlist-actions button.yt-uix-button,
-#comment-section-renderer .comment-section-sort-menu button.yt-uix-button {
+#results .filter-button-container button,
+#comment-section-renderer .comment-section-sort-menu button.yt-uix-button,
+.search-pager button,
+.search-pager a {
 	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
@@ -319,15 +325,23 @@ h1.pl-header-title {
 	background-color: rgba(0,0,0,0.75);
 }
 #c4-spotlight-editor .spotlight-editor-tab {
-	border-color: #cc181c !important;
+	border-color: #cc181e !important;
 }
 .yt-dialog-fg {
 	box-shadow: rgba(0,0,0,0.75) !important;
 }
 #masthead-appbar,
+#watch7-sidebar .watch-sidebar-separation-line,
 #yt-masthead-container,
+tr.pl-video,
+.add-to-widget .playlists,
+.comment-simplebox-renderer,
+.live-chat-widget #comments-scroller,
+.search-header,
+.yt-lockup-playlist-item,
+.yt-consent-banner,
 .yt-picker-header,
-.live-chat-widget #comments-scroller {
+.section-list li .item-section .branded-page-box {
 	border-bottom-color: #070707 !important;
 }
 .yt-uix-button.yt-uix-button-subscribe-unbranded, .yt-badge {
@@ -366,8 +380,6 @@ h1.pl-header-title {
 }
 /* Border colouring */
 #browse-items-primary .item-section > li > .yt-lockup-tile,
-.branded-page-v2-primary-col .branded-page-box,
-.section-list li .item-section .branded-page-box,
 .branded-page-v2-subnav-container,
 .about-metadata-label-border-top,
 #appbar-guide-menu,
@@ -392,6 +404,11 @@ body #footer-container,
 }
 a.yt-uix-button-epic-nav-item.partially-selected {
 	border-color: #cc181e !important;
+}
+#results .section-list li .item-section .branded-page-box {
+	border-width: 1px 0px !important;
+	border-color: #070707 !important;
+	border-style: solid !important;
 }
 .about-metadata-label {
 	font-size: 150%;
@@ -423,9 +440,6 @@ a.yt-uix-button-epic-nav-item.partially-selected {
 .add-to-widget .addto-playlist-item.yt-uix-kbd-nav-highlight {
 	background-color: #4A4A4A !important;
 }
-.add-to-widget .playlists {
-	border-bottom-color: #555555 !important;
-}
 .c4-shelf-preview+.preview-click-guard {
 	background: 0 !important;
 }
@@ -449,13 +463,6 @@ a.yt-uix-button-epic-nav-item.partially-selected {
 }
 .comment-section-header-renderer {
 	color: #b8b8b8 !important;
-}
-.comment-simplebox-renderer,
-tr.pl-video {
-	border-bottom-color: #070707 !important;
-}
-.comment-simplebox-renderer-collapsed-content {
-	border-color: #070707 !important;
 }
 .comment-simplebox.focus .comment-simplebox-frame {
 	border-color: green !important;
@@ -499,9 +506,6 @@ tr.pl-video {
 #watch-channel-brand-div-text {
 	display: block !important;
 }
-#watch7-sidebar .watch-sidebar-separation-line {
-	border-bottom-color: #070707 !important;
-}
 .video-list .video-list-item .title {
 	max-height: 3.5em;
 }
@@ -519,7 +523,4 @@ tr.pl-video {
 }
 #footer-links-primary a {
 	color: #167ac6 !important;
-}
-.yt-consent-banner {
-	border-bottom-color: #070707 !important;
 }
