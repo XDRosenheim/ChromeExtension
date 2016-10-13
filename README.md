@@ -22,9 +22,6 @@ Buttons.
 The text should go blue when hovering over it.  
 ![Playlist](https://i.gyazo.com/3de8b098580925ae27ecd08d5f872cea.gif)
 
-#### "Watch later" icon is pretty much gone...
-![Watch later](https://i.gyazo.com/8140db073b1bfbb2d91161e25a013597.png)
-
 #### Creator Studio
 Pretty much all of it...  
 ![Creator Studio](https://i.gyazo.com/d3823e7e229ed29eeb2e1a1e625394b2.png)
