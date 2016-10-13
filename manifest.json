@@ -3,7 +3,7 @@
 
   "name": "Dark YouTube",
   "short_name": "Dark YouTube",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Makes YouTube browsing a little bit better for your eyes.",
 
   "content_scripts": [{
