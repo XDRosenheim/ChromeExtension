@@ -20,6 +20,7 @@
 #masthead-appbar-containe,
 #masthead-search .search-btn-component .yt-uix-button-content,
 #pl-header .playlist-share:before,
+#pl-header .yt-uix-button-icon-gear,
 #report-form-modal-renderer .yt-dialog-base .yt-dialog-header .yt-dialog-close .yt-uix-button-content,
 #watch-header > #watch7-user-header > #watch7-subscription-container a::before,
 #yt-masthead #logo-container .logo,
@@ -29,6 +30,7 @@ input[type="checkbox" i],
 .action-panel-trigger-share:before,
 .addto-button:before,
 .autoplay-bar .autoplay-info-icon,
+.create-playlist-widget-button .add-new-pl-btn:before,
 .creator-bar-item .yt-uix-button-text-dark,
 .c4-editor-edit:before,
 .c4-editor-move-down:before,
@@ -42,6 +44,7 @@ input[type="checkbox" i],
 .live-chat-widget .post-button::before,
 .live-chat-widget .actions-menu .yt-uix-button:before,
 .options-renderer-question-mark,
+.pl-header-privacy-everyone,
 .play-all-icon-btn:before,
 .privacy-public-icon,
 .private-icon,
@@ -94,13 +97,14 @@ input[type="checkbox" i],
 .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before {
 	-webkit-filter: grayscale(0) invert(0) !important;
 }
-/* Dat Dislike Button mann.... */
+/* 
+ * Dat Dislike Button mann.
+ * It's gordeous.
+*/
 .like-button-renderer-dislike-button-clicked::before {
 	-webkit-filter: hue-rotate(145deg) brightness(18) contrast(1130%)
 }
-/*
-	Background colouring
-*/
+/* BACKGROUNDCOLOURING */
 body,
 #action-panel-details,
 #footer-container,
@@ -143,19 +147,23 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 #browse-items-primary .video-detail h3.title,
 .content-picker-selector-item .content-picker-action-bar,
 #watch-headline-title .watch-title,
+.pl-header-inlineedit .c4-module-is-editable:hover,
 .watch-view-count,
 .watch-editable:hover,
 .yt-uix-button-c4-view-action {
 	background-color: #292929 !important;
 }
-.live-chat-widget .comment.alternate-row,
+#pl-header .privacy-icon-present .pl-header-details::before {
+	border-color: #292929 !important;
+}
 #creator-sidebar > #creator-sidebar-section-id-dashboard.selected > h3 a,
 #creator-sidebar > #creator-sidebar-section-id-your-contributions.selected > h3 a,
-#creator-sidebar .creator-sidebar-section a:hover {
+#creator-sidebar .creator-sidebar-section a:hover,
+.live-chat-widget .comment.alternate-row {
 	background-color: #2f2f2f !important;
 	color: #cc181e !important;
 }
-/* Primary text colour */
+/* PRIMARY TEXTCOLOURING */
 #appbar-nav .epic-nav-item-heading,
 #creator-page #creator-sidebar .creator-sidebar-branding h1,
 #dashboard-header h2 a,
@@ -178,6 +186,7 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 #watch-action-panels h3,
 #watch-action-panels .options-renderer-form .options-renderer-category-label,
 #yt-uix-videoactionmenu-menu > .hide-on-create-pl-panel h3,
+h1.pl-header-title,
 .about-description pre,
 .about-metadata-label,
 .add-to-widget .addto-playlist-item,
@@ -203,13 +212,20 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 .flag-channel-overlay-2 p,
 .guide-header p,
 .guide-item,
+.live-chat-widget .comment .comment-text,
+.live-chat-widget .comment.alternate-row .comment-text,
+.live-comments-popout-active-message,
+.live-chat-controls-container div.comments-textarea,
 .options-renderer-message-required,
+.pl-video-title-link,
 .search-header .yt-uix-button-content,
 .secondary-header-contents .nav-text,
 .share-panel-start-at-container,
 .share-email label,
 .share-panel,
 .standalone-collection-badge-renderer-icon,
+.upload-footer-header,
+.upload-sidebar-header,
 .video-list .video-list-item .title,
 .view-as-menu-text,
 .watch-extras-section .title,
@@ -224,68 +240,63 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 .yt-dialog-title,
 .yt-picker-content strong,
 .yt-ui-menu-item-label,
+.yt-ui-menu-item,
 .yt-uix-button-menu-item,
 .yt-uix-button.yt-uix-button-subscribe-unbranded,
-.yt-uix-form-label,.c4-checklist-module .view-all-link,
-.yt-uix-form-legend,
-.live-chat-widget .comment .comment-text,
-.live-chat-widget .comment.alternate-row .comment-text,
-.live-comments-popout-active-message,
-.live-chat-controls-container div.comments-textarea,
-.upload-footer-header,
-.upload-sidebar-header,
-.pl-video-title-link,
-h1.pl-header-title {
+.yt-uix-form-label,
+.yt-uix-form-legend {
 	color: white !important;
 }
-/* Primary text colour - Non-important */
-.todo-title-text,
+/* PRIMARY TEXTCOLOURING - Non-important */
 #subscription-manager-container .subscription-manager-title,
-#watch-header > #watch8-action-buttons > #watch8-sentiment-actions button span {
+#watch-header > #watch8-action-buttons > #watch8-sentiment-actions button span,
+.todo-title-text,
+.translation-editor-column-half {
 	color: white;
 }
-/* Button colouring */
-#watch7-creator-bar-nav-buttons a,
-#watch-header > #watch7-user-header > #watch7-subscription-container a,
+/* BUTTONCOLOURING */
+#about-metadata-form-custom-links > button.yt-uix-button-default,
 #action-panel-details .watch-pencil-icon,
-#upload-btn,
-#search-btn,
-#watch-discussion > #comment-section-renderer > .yt-uix-menu > button,
-#footer #footer-main a.yt-uix-button,
-#comment-simplebox-create-comment button.yt-uix-button-default,
-#masthead-positioner > .yt-consent > .yt-consent-buttons > button.consent-close,
-#eow-title .watch-pencil-icon,
-.yt-uix-button.yt-uix-button-subscribed-branded,
-.yt-uix-button-subscribed-branded+.yt-uix-subscription-preferences-button,
-.shelf-item:hover .shelves-play,
-.sub-menu-back-button,
 #browse-items-primary > li > button,
-.about-actions > button,
-.send-button-info > button,
-.browse-items-load-more-button,
-.comment-section-renderer-paginator,
-.feedback-banner,
-.c4-empty-module button,
-.c4-module-editor-actions > button,
-.yt-uix-hovercard .spotlight-privacy-hovercard-container,
-.sidebar-add-channels-button,
-.yt-uix-button.yt-uix-button-nakedicon,
-.live-comments-popout-active button,
-#upload-hub-privacy-settings button,
-.upload-other-options-list .upload-option-button,
+#c4-branding-dropdown-menu,
+#comment-section-renderer .comment-section-sort-menu button.yt-uix-button,
+#eow-title .watch-pencil-icon,
+#footer #footer-main a.yt-uix-button,
 #footer-main > button,
 #footer-main > ul.pickers button,
+#masthead-positioner > .yt-consent > .yt-consent-buttons > button.consent-close,
+#playlists-tab-create-playlist-widget button,
+#results .filter-button-container button,
+#search-btn,
+#upload-btn,
+#upload-hub-privacy-settings button,
+#watch-discussion > #comment-section-renderer > .yt-uix-menu > button,
+#watch-header > #watch7-user-header > #watch7-subscription-container a,
+#watch7-creator-bar-nav-buttons a,
 #yt-picker-safetymode-footer #safety-form .safety-submit button[type="submit"],
-.yt-uix-button-menu-default,
-#c4-branding-dropdown-menu,
+.about-actions > button,
+.browse-items-load-more-button,
+.c4-empty-module button,
+.c4-module-editor-actions > button,
+.comment-section-renderer-paginator,
+.comment-simplebox-cancel,
 .content-picker-adder .yt-uix-button,
-#about-metadata-form-custom-links > button.yt-uix-button-default,
+.feedback-banner,
+.live-comments-popout-active button,
 .playlist-actions a.yt-uix-button,
 .playlist-actions button.yt-uix-button,
-#results .filter-button-container button,
-#comment-section-renderer .comment-section-sort-menu button.yt-uix-button,
+.sidebar-add-channels-button,
+.search-pager a,
 .search-pager button,
-.search-pager a {
+.send-button-info > button,
+.shelf-item:hover .shelves-play,
+.sub-menu-back-button,
+.upload-other-options-list .upload-option-button,
+.yt-uix-button.yt-uix-button-nakedicon,
+.yt-uix-button.yt-uix-button-subscribed-branded,
+.yt-uix-button-menu-default,
+.yt-uix-button-subscribed-branded+.yt-uix-subscription-preferences-button,
+.yt-uix-hovercard .spotlight-privacy-hovercard-container {
 	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
@@ -330,6 +341,7 @@ h1.pl-header-title {
 .yt-dialog-fg {
 	box-shadow: rgba(0,0,0,0.75) !important;
 }
+/* BORDERCOLOURING*/
 #masthead-appbar,
 #watch7-sidebar .watch-sidebar-separation-line,
 #yt-masthead-container,
@@ -341,8 +353,12 @@ tr.pl-video,
 .yt-lockup-playlist-item,
 .yt-consent-banner,
 .yt-picker-header,
-.section-list li .item-section .branded-page-box {
-	border-bottom-color: #070707 !important;
+.section-list li .item-section .branded-page-box,
+.branded-page-v2-primary-col .yt-uix-inlineedit-view-container .branded-page-box,
+.translation-editor-header .translation-editor-column-half,
+.translation-editor-header .translation-editor-column-divider,
+.yt-ui-menu-content li.yt-ui-menu-new-section-separator {
+	border-color: #070707 !important;
 }
 .yt-uix-button.yt-uix-button-subscribe-unbranded, .yt-badge {
 	background-color: #e62117 !important;
