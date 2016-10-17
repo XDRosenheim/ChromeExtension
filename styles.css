@@ -359,6 +359,7 @@ tr.pl-video,
 .translation-editor-header .translation-editor-column-half,
 .translation-editor-header .translation-editor-column-divider,
 .yt-ui-menu-content li.yt-ui-menu-new-section-separator,
+#browse-items-primary .item-section > li > .yt-lockup-tile,
 .branded-page-v2-primary-col .branded-page-box,
 .section-list li .item-section .branded-page-box {
 	border-color: #070707 !important;
