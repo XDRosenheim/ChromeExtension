@@ -13,6 +13,7 @@
 #channel-search .show-search .search-icon,
 #comment-section-renderer .sprite-like:before,
 #comment-section-renderer .sprite-dislike:before,
+#creator-sidebar .studio-icon.creator-sidebar-translations-and-transcriptions,
 #footer-logo .footer-logo-icon,
 #footer .yt-uix-button-icon-footer-language,
 #footer .yt-uix-button-icon-footer-history,
@@ -45,7 +46,7 @@ input[type="checkbox" i],
 .live-chat-widget .actions-menu .yt-uix-button:before,
 .options-renderer-question-mark,
 .pl-header-privacy-everyone,
-.pl-video-edit-remove:before, 
+.pl-video-edit-remove:before,
 .pl-video-edit-remove-liked-video:before,
 .play-all-icon-btn:before,
 .privacy-public-icon,
@@ -104,7 +105,7 @@ input[type="checkbox" i],
 .like-button-renderer-like-button.yt-uix-button.yt-uix-button-toggled:before {
 	-webkit-filter: grayscale(0) invert(0) !important;
 }
-/* 
+/*
  * Dat Dislike Button mann.
  * It's gordeous.
 */
@@ -186,11 +187,12 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 /* PRIMARY TEXTCOLOURING */
 #appbar-nav .epic-nav-item-heading,
 #creator-page #creator-sidebar .creator-sidebar-branding h1,
+#creator-sidebar .creator-sidebar-section a,
 #dashboard-header h2 a,
 #dashboard-header h3 a,
 #dashboard-header h3,
 #dashboard-header .dashboard-stat-value,
-#dashboard-header .dashboard-stat-name, 
+#dashboard-header .dashboard-stat-name,
 #dashboard-header .add-widget-button-label,
 #dashboard-header-stats li,
 #footer h3,
@@ -215,6 +217,7 @@ h1.pl-header-title,
 .add-to-widget .addto-playlist-item,
 .add-to-widget .create-playlist-item,
 .add-to-widget > .yt-spinner,
+.analytics-sparkline-card .infos .title,
 .branded-page-module-title,
 .branded-page-module-title a:visited,
 .branded-page-module-title a,
@@ -228,6 +231,7 @@ h1.pl-header-title,
 .comment-renderer-text-content,
 .country-container,
 .content-region,
+.dashboard-widget-comments .comment-comment,
 .epic-nav-item-heading,
 .epic-nav-item.selected,
 .flag-channel-overlay-0 p,
@@ -269,8 +273,10 @@ h1.pl-header-title,
 .dashboard-widget.notification,
 .dashboard-widget .dashboard-widget-content,
 .dashboard-widget-display-title a,
+.dashboard-widget-header h2,
 .dashboard-widget .dashboard-widget-config,
 .dashboard-widget-videos .video-list-item .video-title a,
+.yt-alert-naked .yt-alert-content,
 .yt-uix-form-label,
 .yt-uix-form-legend {
 	color: white !important;
@@ -336,19 +342,26 @@ h1.pl-header-title,
 .video-list .yt-uix-button-group button,
 .yt-uix-button-subscribed-branded+.yt-uix-subscription-preferences-button,
 .yt-uix-hovercard .spotlight-privacy-hovercard-container,
+.dashboard-widget-padded-content .config-controls .config-controls-right button.dashboard-widget-dismiss,
 .yt-uix-overlay-actions .yt-uix-button-default {
 	border: 1px solid #070707 !important;
 	background: #292929 !important;
 	color: white !important;
 	box-shadow: none !important;
 }
+.dashboard-widget-padded-content .config-controls .config-controls-left button {
+	border: 1px solid #FF0000 !important;
+	background: #FF0000 !important;
+	color: white;
+	box-shadow: none !important;
+}
 .yt-uix-button-icon-dismissal {
-	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfl4TIZxK.webp) 5px -1288px
+	background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfl4TIZxK.webp) 5px -1288px;
 }
 .pl-video-list-editable .pl-video:hover .pl-video-handle {
 	background: #292929 !important;
-  border-left: 1px solid #393939 !important;
-  border-right: 1px solid #393939 !important;
+	border-left: 1px solid #393939 !important;
+	border-right: 1px solid #393939 !important;
 }
 .upload-other-options-list .upload-option-text {
 	color: #666666 !important;
@@ -358,7 +371,7 @@ h1.pl-header-title,
 #dashboard-header h3,
 #dashboard-header #dashboard-header-stats,
 #dashboard-header .dashboard-stat-value,
-#dashboard-header .dashboard-stat-name, 
+#dashboard-header .dashboard-stat-name,
 #dashboard-header .add-widget-button-label,
 #dashboard-header-stats li {
 	text-shadow: none !important;
@@ -414,7 +427,7 @@ tr.pl-video,
 .dashboard-widget-header:hover,
 .dashboard-widget .dashboard-widget-config .dashboard-widget-header,
 .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header,
-.dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header
+.dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header,
 .feed-header,
 .flag-channel-abuse-form hr,
 .guide-section-separator,
@@ -513,6 +526,10 @@ a.yt-uix-button-epic-nav-item.partially-selected {
 .c4-shelf-preview+.preview-click-guard {
 	background: 0 !important;
 }
+.analytics-sparkline-card:hover,
+.dashboard-widget-footer .dashboard-widget-view-all-link:hover {
+	background: rgba(238,238,238,0.1) !important;
+}
 .yt-uix-button-text,
 .yt-uix-button-text[disabled] {
 	color: #ccc !important;
@@ -523,11 +540,14 @@ a.yt-uix-button-epic-nav-item.partially-selected {
 #dashboard-header h3 a:hover,
 .pl-video-title-link:hover,
 .dashboard-widget-videos .video-list-item .video-title a:hover,
-.dashboard-widget-header h2 a:hover
+.dashboard-widget-header h2 a:hover,
+#dashboard-header .dashboard-channel-link,
+.dashboard-widget-comments .comment-header a,
 #watch7-sidebar .video-list-item a:hover .title {
 	color: #167ac6 !important;
 }
 .yt-card .yt-uix-button-expander,
+#creator-sidebar-separator,
 #yt-picker-safetymode-footer #safety-form .safety-submit {
 	border-top: 0 !important;
 }
