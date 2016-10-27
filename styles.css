@@ -165,6 +165,7 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 .watch-view-count,
 .watch-editable:hover,
 .dashboard-widget-videos .video-list-item .video-title a:hover,
+.standalone-collection-badge-renderer-text a,
 .yt-uix-button-c4-view-action {
 	background-color: #292929 !important;
 }
@@ -280,6 +281,10 @@ h1.pl-header-title,
 .todo-title-text,
 .translation-editor-column-half {
 	color: white;
+}
+.standalone-collection-badge-renderer-text a {
+	color: #FFFF00 !important;
+	padding: 0 !important;
 }
 /* BUTTONCOLOURING */
 #about-metadata-form-custom-links > button.yt-uix-button-default,
