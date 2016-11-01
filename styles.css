@@ -75,6 +75,10 @@ input[type="checkbox" i],
 .yt-uix-form-input-radio-container,
 .yt-uix-shelfslider .yt-uix-shelfslider-next,
 .yt-uix-button-icon-dashboard-widget-config,
+.vm-icon-add-audio-to-video,
+.vm-list-view .vm-video-metric.video-comments .yt-sprite,
+.vm-list-view .vm-video-metric.video-likes-count .yt-sprite,
+.vm-list-view .vm-video-metric.video-dislikes-count .yt-sprite,
 .add-widget-button:hover,
 .add-widget-button:focus,
 .yt-uix-shelfslider .yt-uix-shelfslider-prev,
@@ -161,11 +165,18 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 #yt-picker-safetymode-footer,
 #browse-items-primary .video-detail h3.title,
 .content-picker-selector-item .content-picker-action-bar,
+.vm-list-view .vm-video-list .vm-video-item,
 #watch-headline-title .watch-title,
+#vm-pagination,
 .pl-header-inlineedit .c4-module-is-editable:hover,
+#vm-bulk-actions-editing-header,
 .watch-view-count,
 .watch-editable:hover,
+.yt-ui-menu-content .yt-ui-menu-item.menu-subheading-notice,
 .dashboard-widget-videos .video-list-item .video-title a:hover,
+.yt-ui-menu-content .yt-ui-menu-item.menu-subheading,
+.yt-ui-menu-content .yt-ui-menu-item.menu-subheading-notice,
+#non-appbar-vm-video-actions-bar,
 .standalone-collection-badge-renderer-text a,
 .yt-uix-button-c4-view-action {
 	background-color: #292929 !important;
@@ -188,6 +199,7 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 #appbar-nav .epic-nav-item-heading,
 #creator-page #creator-sidebar .creator-sidebar-branding h1,
 #creator-sidebar .creator-sidebar-section a,
+#creator-subheader h2,
 #dashboard-header h2 a,
 #dashboard-header h3 a,
 #dashboard-header h3,
@@ -200,6 +212,7 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 #results #filter-dropdown .filter-col-title,
 #subscription-manager-container .subscription-title,
 #upload-button-text,
+#vm-bulk-actions-editing-header,
 #watch8-secondary-actions span,
 #watch-description-clip,
 #watch7-headline h1,
@@ -299,6 +312,9 @@ h1.pl-header-title,
 #browse-items-primary .item-section-header button,
 #c4-branding-dropdown-menu,
 #comment-section-renderer .comment-section-sort-menu button.yt-uix-button,
+#creator-page-content .yt-uix-menu.vm-video-action-button-none-selected button,
+#creator-page-content .yt-uix-menu.vm-video-action-button-selected button,
+#creator-page-content span.yt-uix-clickcard button,
 #eow-title .watch-pencil-icon,
 #footer #footer-main a.yt-uix-button,
 #footer-main > button,
@@ -310,6 +326,11 @@ h1.pl-header-title,
 #search-btn,
 #upload-btn,
 #upload-hub-privacy-settings button,
+#vm-bulk-actions-editing-buttons > button.yt-uix-button-default,
+#vm-bulk-actions-editing-buttons .yt-uix-menu.vm-bulk-action-editing-menu-container > button,
+#vm-playlist-video-list-ol .vm-improve-video-button-group,
+#vm-video-list-container .vm-video-info-container .vm-video-info span a.vm-playlist-edit-video,
+#vm-video-list-container .vm-video-info-container .vm-video-info span button,
 #watch-discussion > #comment-section-renderer > .yt-uix-menu > button,
 #watch-header > #watch7-user-header > #watch7-subscription-container a,
 #watch7-creator-bar-nav-buttons a,
@@ -334,6 +355,7 @@ h1.pl-header-title,
 .shelf-item:hover .shelves-play,
 .sub-menu-back-button,
 .upload-other-options-list .upload-option-button,
+.vm-improve-video-close-button,
 .yt-uix-button.yt-uix-button-nakedicon,
 .yt-uix-button.yt-uix-button-subscribed-branded,
 .yt-uix-button-default .cancel-button,
@@ -407,6 +429,9 @@ h1.pl-header-title,
 #dashboard-header-stats li,
 #footer-main,
 #masthead-appbar,
+#non-appbar-vm-video-actions-bar .vm-video-actions-inner,
+#vm-bulk-actions-editing-buttons,
+#vm-bulk-actions-editing-header,
 #watch-header > #watch8-action-buttons,
 #watch7-sidebar .watch-sidebar-separation-line,
 #yt-masthead-container,
@@ -443,7 +468,13 @@ tr.pl-video,
 .dashboard-widget.yt-uix-dragdrop-dragged-item .dashboard-widget-header .dashboard-widget-header-controls,
 .dashboard-widget.yt-uix-dragdrop-cursor-follower .dashboard-widget-header .dashboard-widget-header-controls,
 .translation-editor-header .translation-editor-column-divider,
+.menu-item-top-divider,
+.related-item-dismissed-container,
+.yt-ui-menu-content .yt-ui-menu-item.menu-subheading,
+.yt-ui-menu-content .yt-ui-menu-item.menu-subheading-notice,
 .translation-editor-header .translation-editor-column-half,
+.vm-improve-video-button-group:hover .vm-improve-video-button,
+.vm-list-view .vm-video-item-content-horizontal-divider,
 .yt-card .yt-uix-tabs,
 .yt-combobox-menu .yt-combobox-menu-content-list,
 .yt-consent-banner,
@@ -453,6 +484,10 @@ tr.pl-video,
 .yt-ui-menu-content li.yt-ui-menu-new-section-separator,
 .yt-uix-button-c4-view-action {
 	border-color: #070707 !important;
+}
+/* Why didn't they just use a border... c'mon mann */
+.vm-list-view .vm-video-item-content-horizontal-divider {
+	background-color: #070707 !important;
 }
 .yt-uix-button.yt-uix-button-subscribe-unbranded, .yt-badge {
 	background-color: #e62117 !important;
@@ -484,6 +519,7 @@ tr.pl-video,
 	background-color: green !important;
 }
 .c4-module-editor-delete,
+#vm-bulk-actions-selection,
 .yt-uix-button-c4-view-action.yt-uix-button-destructive {
 	background-color: #cc181e !important;
 	border-color: #cc0000 !important;
@@ -500,8 +536,9 @@ a.yt-uix-button-epic-nav-item.partially-selected {
 	font-size: 150%;
 }
 #watch7-creator-bar,
-.yt-dialog-fg,
-.c4-checklist-module {
+.c4-checklist-module,
+.vm-improve-video-button-group:hover .vm-improve-video-button,
+.yt-dialog-fg {
 	border: 0 !important;
 }
 #watch-header .yt-user-info a {
@@ -543,6 +580,9 @@ a.yt-uix-button-epic-nav-item.partially-selected {
 .dashboard-widget-header h2 a:hover,
 #dashboard-header .dashboard-channel-link,
 .dashboard-widget-comments .comment-header a,
+.vm-list-view .vm-video-title .vm-video-title-content,
+.video-list .video-list-item .content-wrapper:hover .title,
+#footer-links-primary a,
 #watch7-sidebar .video-list-item a:hover .title {
 	color: #167ac6 !important;
 }
@@ -599,9 +639,6 @@ a.yt-uix-button-epic-nav-item.partially-selected {
 .video-list .video-list-item .title {
 	max-height: 3.5em;
 }
-.video-list .video-list-item .content-wrapper:hover .title {
-	color: #167ac6 !important;
-}
 .standalone-collection-badge-renderer-icon {
 	border-color: #EB0D0D !important;
 }
@@ -610,7 +647,4 @@ a.yt-uix-button-epic-nav-item.partially-selected {
 }
 .feed .not-fixed-width-tab-widescreen .clearfix {
 	background: red;
-}
-#footer-links-primary a {
-	color: #167ac6 !important;
 }

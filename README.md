@@ -6,4 +6,4 @@ Just to clarify... This is not actively being worked on. I will see any issues t
 [Chrome Store](https://chrome.google.com/webstore/detail/dark-youtube/gaeammehabgmnondoclpkfckhocmgjgg) *(chrome.google.com)*
 
 ### Installing the Latest package from GitHub
-Simply drag and drop the downloaded package into the chrome://extensions page.
+Simply drag and drop the downloaded package into [Chrome's extension page](chrome://extensions).
