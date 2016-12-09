@@ -489,7 +489,8 @@ tr.pl-video,
 .vm-list-view .vm-video-item-content-horizontal-divider {
 	background-color: #070707 !important;
 }
-.yt-uix-button.yt-uix-button-subscribe-unbranded, .yt-badge {
+.yt-uix-button.yt-uix-button-subscribe-unbranded,
+.yt-badge-item .yt-badge {
 	background-color: #e62117 !important;
 	border-color: #e62117 !important;
 }
