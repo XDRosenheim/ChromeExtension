@@ -81,6 +81,7 @@ input[type="checkbox" i],
 .vm-list-view .vm-video-metric.video-dislikes-count .yt-sprite,
 .add-widget-button:hover,
 .add-widget-button:focus,
+.yt-uix-button-icon-material-upload,
 .yt-uix-shelfslider .yt-uix-shelfslider-prev,
 .yt-uix-subscription-preferences-button:before {
 	-webkit-filter: grayscale(1) invert(1);
@@ -178,6 +179,7 @@ h3.yt-lockup-title > a.yt-ui-ellipsis,
 .yt-ui-menu-content .yt-ui-menu-item.menu-subheading-notice,
 #non-appbar-vm-video-actions-bar,
 .standalone-collection-badge-renderer-text a,
+.yt-ui-ellipsis,
 .yt-uix-button-c4-view-action {
 	background-color: #292929 !important;
 }
@@ -334,6 +336,7 @@ h1.pl-header-title,
 #watch-discussion > #comment-section-renderer > .yt-uix-menu > button,
 #watch-header > #watch7-user-header > #watch7-subscription-container a,
 #watch7-creator-bar-nav-buttons a,
+#yt-masthead .yt-masthead-user a,
 #yt-picker-safetymode-footer #safety-form .safety-submit button[type="submit"],
 .about-actions > button,
 .browse-items-load-more-button,
